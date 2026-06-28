@@ -1,6 +1,5 @@
 import createMiddleware from "next-intl/middleware";
 import { NextRequest, NextResponse } from "next/server";
-import { createServerClient } from "@supabase/ssr";
 
 const locales = ["es", "en"] as const;
 const defaultLocale = "es";
@@ -11,33 +10,6 @@ const intlMiddleware = createMiddleware({
   localePrefix: "always",
 });
 
-async function getSession(request: NextRequest) {
-  const response = NextResponse.next({ request });
-
-  const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-    {
-      cookies: {
-        getAll() {
-          return request.cookies.getAll();
-        },
-        setAll(cookiesToSet) {
-          cookiesToSet.forEach(({ name, value, options }) => {
-            response.cookies.set(name, value, options);
-          });
-        },
-      },
-    }
-  );
-
-  const {
-    data: { session },
-  } = await supabase.auth.getSession();
-
-  return { session, supabase, response };
-}
-
 function getLocaleFromPathname(pathname: string): string {
   for (const locale of locales) {
     if (pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`) {
@@ -45,6 +17,14 @@ function getLocaleFromPathname(pathname: string): string {
     }
   }
   return defaultLocale;
+}
+
+function hasSession(request: NextRequest): boolean {
+  // Supabase stores the session in a cookie starting with "sb-"
+  const cookies = request.cookies.getAll();
+  return cookies.some(
+    (c) => c.name.startsWith("sb-") && c.name.endsWith("-auth-token")
+  );
 }
 
 export async function middleware(request: NextRequest) {
@@ -55,14 +35,11 @@ export async function middleware(request: NextRequest) {
   const isAdminRoute = pathname.startsWith(`/${locale}/admin`);
 
   if (isPortalRoute || isAdminRoute) {
-    const { session, supabase } = await getSession(request);
-
-    if (!session) {
+    if (!hasSession(request)) {
       const loginUrl = new URL(`/${locale}/login`, request.url);
       loginUrl.searchParams.set("redirectTo", pathname);
       return NextResponse.redirect(loginUrl);
     }
-
   }
 
   return intlMiddleware(request);
