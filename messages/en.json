@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "sobre": "About Us",
+    "commodities": "Commodities",
+    "proceso": "Process",
+    "contacto": "Contact",
+    "login": "Sign In",
+    "register": "Register"
+  },
+  "hero": {
+    "eyebrow": "Private Metals Broker",
+    "headline": "Brokering <gold>Metals & Minerals</gold> from Chile to the World",
+    "subtitle": "We connect international buyers with trusted Chilean mining producers. Operating under the highest compliance and transparency standards.",
+    "ctaBuyer": "I'm a Buyer",
+    "ctaSeller": "I'm a Seller",
+    "trust1": "KYC / KYB Verified",
+    "trust2": "Confidential NDA",
+    "trust3": "Secure Operations"
+  },
+  "stats": {
+    "volume": "Volume Traded",
+    "countries": "Active Countries",
+    "experience": "Years of Experience",
+    "operations": "Closed Operations"
+  },
+  "commodities": {
+    "eyebrow": "Commodities",
+    "heading": "Metals & Minerals We Trade",
+    "subheading": "We broker the purchase and sale of Chilean metals and minerals to international buyers under the highest confidentiality standards.",
+    "lmeNote": "LME reference price",
+    "noLMENote": "Spot market price",
+    "items": {
+      "oro": {
+        "name": "Gold",
+        "description": "Precious metal with high global demand. Chile is one of the world's leading gold producers.",
+        "uses": ["Jewelry", "Electronics", "Store of value", "Aerospace industry"]
+      },
+      "cobre": {
+        "name": "Copper",
+        "description": "Chile is the world's largest copper producer. An essential metal for the energy transition.",
+        "uses": ["Construction", "Electrical", "Electric vehicles", "Renewable energy"]
+      },
+      "plata": {
+        "name": "Silver",
+        "description": "Precious metal with high electrical and thermal conductivity, widely used in industry.",
+        "uses": ["Electronics", "Solar panels", "Jewelry", "Medicine"]
+      },
+      "molibdeno": {
+        "name": "Molybdenum",
+        "description": "Critical metal for the manufacture of high-strength specialty steels.",
+        "uses": ["Specialty steels", "Lubricants", "Catalysts", "Petrochemical industry"]
+      },
+      "sal": {
+        "name": "Industrial Salt",
+        "description": "Chile has extensive salt flats with high-purity salt for industrial and food use.",
+        "uses": ["Industrial chemistry", "Food", "Water treatment", "Road de-icing"]
+      },
+      "otros": {
+        "name": "Other Minerals",
+        "description": "We trade a wide range of minerals based on our clients' specific needs.",
+        "uses": ["Consult our team for commodities not listed"]
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Process",
+    "heading": "How We Work",
+    "subheading": "A structured and confidential process to ensure safe and successful operations.",
+    "step1": {
+      "title": "Registration & Verification",
+      "description": "Register as a buyer or seller. We verify your identity and conduct a full KYC/KYB process to ensure secure operations."
+    },
+    "step2": {
+      "title": "Confidentiality Agreement",
+      "description": "We sign a mutual NDA to protect sensitive commercial information of all parties involved in the operation."
+    },
+    "step3": {
+      "title": "Negotiation & Closing",
+      "description": "We facilitate negotiations, manage all documentation, and guide both parties to a successful close."
+    }
+  },
+  "cta": {
+    "eyebrow": "Join Our Network",
+    "heading": "Ready to Trade?",
+    "subheading": "Join our international network of buyers and sellers of Chilean metals and minerals.",
+    "buyer": {
+      "title": "For Buyers",
+      "description": "Access reliable sources of Chilean metals and minerals with full traceability and documentation.",
+      "cta": "Register as Buyer",
+      "b1": "Access to verified producers",
+      "b2": "Full documentation & traceability",
+      "b3": "Support at every stage"
+    },
+    "seller": {
+      "title": "For Sellers",
+      "description": "Connect your production with qualified international buyers and maximize the value of your minerals.",
+      "cta": "Register as Seller",
+      "b1": "Global buyer network",
+      "b2": "Guaranteed confidentiality",
+      "b3": "Full operation management"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address": "Santiago, Chile",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "rut": "Tax ID",
+    "form_name": "Full name",
+    "form_email": "Email address",
+    "form_message": "Message",
+    "form_submit": "Send message"
+  },
+  "register": {
+    "buyer_title": "Buyer Registration",
+    "seller_title": "Seller Registration",
+    "step1": "Personal Information",
+    "step2": "Company Information",
+    "submit": "Complete Registration",
+    "success": "Registration received. Our team will contact you shortly."
+  },
+  "portal": {
+    "dashboard_title": "My Dashboard",
+    "documents_title": "My Documents",
+    "status_new": "New",
+    "status_contacted": "Contacted",
+    "status_nda": "NDA Signed",
+    "status_negotiating": "Negotiating",
+    "status_closed": "Closed",
+    "status_cancelled": "Cancelled"
+  },
+  "admin": {
+    "dashboard_title": "Admin Dashboard",
+    "buyers": "Buyers",
+    "sellers": "Sellers",
+    "operations": "Operations",
+    "documents": "Documents",
+    "config": "Settings"
+  },
+  "footer": {
+    "tagline": "Private intermediation of metals and minerals. Connecting Chile with the world.",
+    "navigation": "Navigation",
+    "legal": "Legal",
+    "nav": {
+      "inicio": "Home",
+      "sobre": "About Us",
+      "commodities": "Commodities",
+      "proceso": "Process",
+      "contacto": "Contact"
+    },
+    "legalLinks": {
+      "legal": "Legal Notice",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use"
+    },
+    "copyright": "© {year} DZ Metals. All rights reserved.",
+    "disclaimer": "Brokerage operations are subject to KYC/KYB verification. Price information is for reference only."
+  }
+}

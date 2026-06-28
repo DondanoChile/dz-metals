@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "sobre": "Nosotros",
+    "commodities": "Commodities",
+    "proceso": "Proceso",
+    "contacto": "Contacto",
+    "login": "Iniciar Sesión",
+    "register": "Registrarse"
+  },
+  "hero": {
+    "eyebrow": "Corredora Privada de Metales",
+    "headline": "Intermediación de <gold>Metales y Minerales</gold> de Chile al Mundo",
+    "subtitle": "Conectamos compradores internacionales con productores mineros chilenos de confianza. Operamos con los más altos estándares de cumplimiento y transparencia.",
+    "ctaBuyer": "Soy Comprador",
+    "ctaSeller": "Soy Vendedor",
+    "trust1": "KYC / KYB Verificado",
+    "trust2": "NDA Confidencial",
+    "trust3": "Operaciones Seguras"
+  },
+  "stats": {
+    "volume": "Volumen Operado",
+    "countries": "Países Activos",
+    "experience": "Años de Experiencia",
+    "operations": "Operaciones Cerradas"
+  },
+  "commodities": {
+    "eyebrow": "Commodities",
+    "heading": "Metales y Minerales que Operamos",
+    "subheading": "Intermediamos la compra y venta de metales y minerales chilenos con compradores internacionales bajo los más altos estándares de confidencialidad.",
+    "lmeNote": "Precio referencial LME",
+    "noLMENote": "Precio según mercado spot",
+    "items": {
+      "oro": {
+        "name": "Oro",
+        "description": "Metal precioso de alta demanda global. Chile es uno de los principales productores mundiales.",
+        "uses": ["Joyería", "Electrónica", "Reserva de valor", "Industria aeroespacial"]
+      },
+      "cobre": {
+        "name": "Cobre",
+        "description": "Chile es el mayor productor mundial de cobre. Metal esencial para la transición energética.",
+        "uses": ["Construcción", "Electricidad", "Vehículos eléctricos", "Energías renovables"]
+      },
+      "plata": {
+        "name": "Plata",
+        "description": "Metal precioso con alta conductividad eléctrica y térmica, ampliamente utilizado en industria.",
+        "uses": ["Electrónica", "Paneles solares", "Joyería", "Medicina"]
+      },
+      "molibdeno": {
+        "name": "Molibdeno",
+        "description": "Metal crítico para la fabricación de aceros especiales de alta resistencia.",
+        "uses": ["Aceros especiales", "Lubricantes", "Catalizadores", "Industria petroquímica"]
+      },
+      "sal": {
+        "name": "Sal Industrial",
+        "description": "Chile posee extensos salares con sal de alta pureza para uso industrial y alimentario.",
+        "uses": ["Química industrial", "Alimentación", "Tratamiento de agua", "Descongelamiento vial"]
+      },
+      "otros": {
+        "name": "Otros Minerales",
+        "description": "Operamos una amplia gama de minerales según las necesidades específicas de nuestros clientes.",
+        "uses": ["Consulte a nuestro equipo para commodities no listados"]
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Proceso",
+    "heading": "Cómo Trabajamos",
+    "subheading": "Un proceso estructurado y confidencial para garantizar operaciones seguras y exitosas.",
+    "step1": {
+      "title": "Registro y Verificación",
+      "description": "Regístrese como comprador o vendedor. Verificamos su identidad y realizamos el proceso KYC/KYB completo para garantizar operaciones seguras."
+    },
+    "step2": {
+      "title": "Acuerdo de Confidencialidad",
+      "description": "Firmamos un NDA mutuo para proteger la información comercial sensible de todas las partes involucradas en la operación."
+    },
+    "step3": {
+      "title": "Negociación y Cierre",
+      "description": "Facilitamos la negociación entre compradores y vendedores, gestionamos la documentación y acompañamos hasta el cierre exitoso."
+    }
+  },
+  "cta": {
+    "eyebrow": "Únase a Nuestra Red",
+    "heading": "¿Listo para Operar?",
+    "subheading": "Únase a nuestra red de compradores y vendedores internacionales de metales y minerales de Chile.",
+    "buyer": {
+      "title": "Para Compradores",
+      "description": "Acceda a fuentes confiables de metales y minerales chilenos con trazabilidad y documentación completa.",
+      "cta": "Registrarme como Comprador",
+      "b1": "Acceso a productores verificados",
+      "b2": "Documentación y trazabilidad",
+      "b3": "Acompañamiento en cada etapa"
+    },
+    "seller": {
+      "title": "Para Vendedores",
+      "description": "Conecte su producción con compradores internacionales calificados y maximice el valor de su mineral.",
+      "cta": "Registrarme como Vendedor",
+      "b1": "Red global de compradores",
+      "b2": "Confidencialidad garantizada",
+      "b3": "Gestión completa de la operación"
+    }
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "address": "Santiago, Chile",
+    "phone": "Teléfono",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "rut": "RUT",
+    "form_name": "Nombre completo",
+    "form_email": "Correo electrónico",
+    "form_message": "Mensaje",
+    "form_submit": "Enviar mensaje"
+  },
+  "register": {
+    "buyer_title": "Registro de Comprador",
+    "seller_title": "Registro de Vendedor",
+    "step1": "Información Personal",
+    "step2": "Información de Empresa",
+    "submit": "Completar Registro",
+    "success": "Registro recibido. Nuestro equipo se contactará con usted a la brevedad."
+  },
+  "portal": {
+    "dashboard_title": "Mi Panel",
+    "documents_title": "Mis Documentos",
+    "status_new": "Nueva",
+    "status_contacted": "Contactado",
+    "status_nda": "NDA Firmado",
+    "status_negotiating": "En Negociación",
+    "status_closed": "Cerrada",
+    "status_cancelled": "Cancelada"
+  },
+  "admin": {
+    "dashboard_title": "Panel Administrativo",
+    "buyers": "Compradores",
+    "sellers": "Vendedores",
+    "operations": "Operaciones",
+    "documents": "Documentos",
+    "config": "Configuración"
+  },
+  "footer": {
+    "tagline": "Intermediación privada de metales y minerales. Conectamos Chile con el mundo.",
+    "navigation": "Navegación",
+    "legal": "Legal",
+    "nav": {
+      "inicio": "Inicio",
+      "sobre": "Nosotros",
+      "commodities": "Commodities",
+      "proceso": "Proceso",
+      "contacto": "Contacto"
+    },
+    "legalLinks": {
+      "legal": "Aviso Legal",
+      "privacy": "Privacidad",
+      "terms": "Términos de Uso"
+    },
+    "copyright": "© {year} DZ Metals. Todos los derechos reservados.",
+    "disclaimer": "Las operaciones de intermediación están sujetas a verificación KYC/KYB. La información de precios es referencial."
+  }
+}

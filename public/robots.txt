@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /api/admin/
+Disallow: /es/admin/
+Disallow: /en/admin/
+Disallow: /es/portal/
+Disallow: /en/portal/
