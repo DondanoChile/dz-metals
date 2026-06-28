@@ -19,6 +19,21 @@ export const metadata = {
   title: "DZ Metals",
   description:
     "Intermediación privada de metales y minerales. Conectamos compradores y vendedores de oro, cobre, plata, molibdeno y más.",
+  manifest: "/manifest.json",
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
+    apple: { url: "/icons/icon-152x152.png", sizes: "152x152", type: "image/png" },
+  },
+  themeColor: "#C9A84C",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "DZM",
+  },
 };
 
 export default async function LocaleLayout({
