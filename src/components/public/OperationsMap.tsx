@@ -15,7 +15,7 @@ interface Zone {
 export default function OperationsMap({ zones }: { zones: Zone[] }) {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
-  const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+  const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || "pk.eyJ1IjoiZG9uZGEyMDE1IiwiYSI6ImNtcXdpcHZiYTFodzcydHB3dGNlajIwNzkifQ.VegRpsjs535EIikUsfvhTA";
 
   useEffect(() => {
     if (!token || !mapContainer.current || map.current) return;
