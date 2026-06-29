@@ -3,13 +3,20 @@ import { cookies } from "next/headers";
 import { createServerClient } from "@supabase/ssr";
 import { createClient } from "@supabase/supabase-js";
 
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://pcfatvkupcrryqinvsox.supabase.co";
+const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBjZmF0dmt1cGNycnlxaW52c294Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI1NTU0NjAsImV4cCI6MjA5ODEzMTQ2MH0.39BlwOoBMSOaqYb4RMxEvr1valhW63SJLXDeOrsdYRA";
+const SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || "";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://dz-metals.vercel.app";
+
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   const cookieStore = await cookies();
 
   // Cliente para leer la sesión activa
   const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    SUPABASE_URL,
+    SUPABASE_ANON_KEY,
     {
       cookies: {
         getAll() { return cookieStore.getAll(); },
@@ -25,17 +32,13 @@ export async function GET() {
   );
 
   const { data: { user } } = await supabase.auth.getUser();
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
   if (!user) {
-    return NextResponse.redirect(new URL("/es/login", base));
+    return NextResponse.redirect(new URL("/es/login", SITE_URL));
   }
 
   // Cliente admin para leer el rol sin restricciones RLS
-  const adminClient = createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.SUPABASE_SERVICE_ROLE_KEY!
-  );
+  const adminClient = createClient(SUPABASE_URL, SERVICE_ROLE_KEY);
 
   const { data: userRow } = await adminClient
     .from("users")
@@ -44,8 +47,8 @@ export async function GET() {
     .single();
 
   if (userRow?.role === "admin") {
-    return NextResponse.redirect(new URL("/es/admin", base));
+    return NextResponse.redirect(new URL("/es/admin", SITE_URL));
   }
 
-  return NextResponse.redirect(new URL("/es/portal/dashboard", base));
+  return NextResponse.redirect(new URL("/es/portal/dashboard", SITE_URL));
 }
